@@ -1,0 +1,61 @@
+
+## 1. How to run
+
+This project doesn’t require any build tools or installations.
+
+To run it:
+- Download or clone the repository
+- Open `index.html` in any web browser (Chrome, Edge, etc.)
+
+That’s it — everything runs locally in the browser.
+
+If you prefer using a local server:
+- Run: npx serve
+- Then open the provided localhost link
+
+
+## 2. Stack & design choices
+
+I chose to use plain HTML, CSS, and JavaScript because I wanted to keep the project simple and fully understand each part of the implementation without relying on frameworks. It also makes the app quick to run since there’s no setup required.
+
+Two specific design decisions:
+
+1. **Using a grid layout for habits**
+   Instead of displaying habits in a vertical list, I used a grid where habits are rows and days are columns. This makes it easier to scan progress across a week at a glance, especially when there are multiple habits.
+
+2. **Highlighting today’s column**
+   I added a visual highlight (a blue border) to the current day’s column. This helps the user immediately know where they are in the week without having to check dates manually.
+
+
+## 3. Responsive & accessibility
+
+On a smaller screen (around 360px), the grid becomes more compact, and the cells shrink to fit the screen. It still works, but users may need to scroll horizontally if there are many habits.
+
+On a larger screen (around 1440px), the layout expands and becomes easier to read, with more spacing between cells.
+
+Accessibility:
+- I made sure buttons and clickable cells are clearly visible and easy to interact with.
+
+One thing I didn’t fully implement:
+- Keyboard navigation and ARIA labels. Given more time, I would add proper focus states and allow users to toggle cells using the keyboard.
+
+
+## 4. AI usage
+
+I used AI as a reference tool while building parts of the app.
+
+Specifically:
+- I asked for help structuring the weekly grid layout
+- I also used it to better understand how to store and retrieve data using localStorage
+
+One thing I changed:
+- The initial suggestion used a more rigid layout with fixed sizing, but I adjusted it to a more flexible grid structure so it adapts better to different screen sizes.
+
+
+## 5. Honest gap
+
+One area that isn’t fully polished is the mobile experience. While the app works on smaller screens, the grid can feel a bit cramped.
+
+If I had more time, I would:
+- Improve the mobile layout (possibly using a scrollable design or cards)
+- Add small animations when checking/unchecking habits to make the interaction feel smoother

@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.add {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.grid-row {
+  display: grid;
+  grid-template-columns: 180px repeat(7, 1fr) 60px;
+  margin-bottom: 5px;
+}
+
+.cell {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  background: white;
+  cursor: pointer;
+}
+
+.checked {
+  background: green;
+  color: white;
+}
+
+.today {
+  border: 2px solid blue;
+}
+
+.habit-name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.actions span {
+  margin-left: 8px;
+  cursor: pointer;
+  color: red;
+}
+
+.empty {
+  text-align: center;
+  margin-top: 20px;
+}
