@@ -19,7 +19,7 @@ It demonstrates my understanding of basic development concepts, problem-solving,
 - HTML
 - CSS
 - JavaScript  
-*(or add your actual tech stack here like Python, React, etc.)*
+
 
 ---
 
